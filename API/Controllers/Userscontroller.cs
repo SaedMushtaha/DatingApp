@@ -12,6 +12,9 @@ namespace API.Controllers
     [Route("api/[controller]")]
     public class Userscontroller : ControllerBase
     {
+
+       
+
         private readonly ILogger<Userscontroller> _logger;
 
         public Userscontroller(ILogger<Userscontroller> logger)
@@ -19,15 +22,17 @@ namespace API.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View("Error!");
-        }
+
+        // public IActionResult Index()
+        // {
+        //     return View();
+        // }
+
+        // [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        // public IActionResult Error()
+        // {
+        //     return View("Error!");
+        // }
     }
 }
