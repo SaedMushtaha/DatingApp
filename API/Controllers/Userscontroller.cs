@@ -8,9 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace API.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class Userscontroller : ControllerBase
+    public class Userscontroller : BaseApiController
     {
 
        
