@@ -46,6 +46,7 @@ PasswordSalt = hmac.Key
     {
         return await _context.Users.AnyAsync(x => x.UserName == username.ToLower());
     }
+    
 
     }
 }
